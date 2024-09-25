@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "ch.unisg.scs.ds";
+
+// Defines the service. A service can have multiple RPCs.
+service PaymentService {
+  // Defines the RPC for processing payments
+  rpc processPayment(PaymentRequest) returns (PaymentResponse) {}
+}
+
+// Request payload
+message PaymentRequest {
+  string card_number = 1;
+  string card_expiry_date = 2;
+  string card_cvc = 3;
+  double payment_amount = 4;
+  string payment_currency = 5;
+}
+
+// Response payload
+message PaymentResponse {
+  string paymentId = 1;
+}

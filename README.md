@@ -101,7 +101,7 @@ Run the server by executing the following Gradle task:
 In a new terminal window, run the client by executing the following Gradle task:
 
 ```shell
-./gradlew runServer
+./gradlew runClient
 ```
 
 The Gradle tasks are defined in [build.gradle](build.gradle).

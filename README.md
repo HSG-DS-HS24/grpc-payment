@@ -55,7 +55,7 @@ message PaymentRequest {
 
 // Response payload
 message PaymentResponse {
-  string paymentId = 1;
+  string payment_id = 1;
 }
 ```
 
